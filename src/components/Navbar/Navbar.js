@@ -4,13 +4,13 @@ import './Navbar.css';
 const Navbar = () => {
     return (
        
-            <nav class="navbar navbar-expand-sm bg-dark d-flex">
-                <div class="container">
-                    <a class="navbar-brand" href="#">SHOPPING!!!</a>
+            <nav className="navbar navbar-expand-sm bg-dark d-flex">
+                <div className="container">
+                    <a className="navbar-brand" href="#">SHOPPING!!!</a>
 
-                    <ul class="navbar-nav me-auto mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <ul className="navbar-nav me-auto mb-lg-0">
+                        <li className="nav-item">
+                            <a className="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                     </ul>
                 <div className="bag">
