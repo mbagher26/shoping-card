@@ -3,10 +3,18 @@
     height: 500px !important;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.3);
     transition: 0.5s;
+    margin-top: 50px;
 }   
 
 .card:hover {
     border: 1px groove rgb(0, 0, 0.5);
+}
+
+.product-info {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 100px;    
 }
 
 .card img {
