@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import ProductSection from './components/productSection/ProductSection';
 import products from './data/products';
 import Toast from './components/Toast/Toast';
+import Cart from './components/Cart/Cart';
 
 function App() {
   const [allProducts, setAllProducts] = useState(products);
@@ -19,6 +20,7 @@ function App() {
         </div>
       </main>
       <Toast/>
+      <Cart />
     </div>
   );
 }
