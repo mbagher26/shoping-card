@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ProductSection from './components/productSection/ProductSection';
 import products from './data/products';
+import Toast from './components/Toast/Toast';
 
 function App() {
   const [allProducts, setAllProducts] = useState(products);
@@ -17,6 +18,7 @@ function App() {
           ))}
         </div>
       </main>
+      <Toast/>
     </div>
   );
 }
