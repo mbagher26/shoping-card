@@ -3,13 +3,13 @@ import { IoCloseSharp } from "react-icons/io5";
 
 const Cart = () => {
     return (
-        <div className="bag-sidebar active w-25 p-3 position-fixed top-0 end-0 bg-white shadow h-100">
-            <div>
+        <aside className="bag-sidebar d-none w-25 p-3 position-fixed top-0 end-0 bg-white shadow h-100">
+            
                 <h3 className="d-flex justify-content-between">
                     <span><BsBag /> Cart</span>
                     <span><IoCloseSharp /></span>
                 </h3>
-            </div>
+            
             <div className='product-info'>
 
                     <div className='card p-3' >
@@ -24,7 +24,7 @@ const Cart = () => {
                     </div>
                 
             </div>
-        </div>
+        </aside>
     );
 }
 
