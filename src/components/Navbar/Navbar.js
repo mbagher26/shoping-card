@@ -1,9 +1,13 @@
 import { BsBag } from "react-icons/bs";
 import './Navbar.css';
+import { useContext } from "react";
+import { DataContext } from "../../Context/DataContext";
 
 const Navbar = () => {
-    return (
-       
+
+    const ContextData = useContext(DataContext)
+
+    return (       
             <nav className="navbar navbar-expand-sm bg-dark d-flex">
                 <div className="container">
                     <a className="navbar-brand" href="#">SHOPPING!!!</a>
@@ -14,12 +18,13 @@ const Navbar = () => {
                         </li>
                     </ul>
                 <div className="bag">
-                    <BsBag style={{color: 'white'}}/>
+                    <BsBag style={{color: 'white'}} onClick={() => {
+                        ContextData.setShowCart(true)
+                    }}/>
                     <span className="bg-white">0</span>
                 </div>
                 </div>
             </nav>
-
     );
 }
 
