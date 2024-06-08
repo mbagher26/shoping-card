@@ -15,7 +15,7 @@ function App() {
   const [showCart, setShowCart] = useState(false);
 
   return (
-    <DataContext.Provider value={{allProducts, userCart, showCart, setShowCart, showToast, setShowToast }}>
+    <DataContext.Provider value={{allProducts, userCart, setUserCart, showCart, setShowCart, showToast, setShowToast }}>
       <div className="App">
         <Navbar />
         <main className='pb-5'>
